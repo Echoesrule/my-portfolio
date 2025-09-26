@@ -1,0 +1,55 @@
+ <!doctype html>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <head>
+ <link rel="stylesheet" href="login2.css">
+ <title>Valar login</title>
+ <link rel="icon" href="valar.jpg" type="image/x-icon">
+ </head>
+ 
+
+ <body>
+     <div id="loading" style="display: flex; align-items: center; justify-content: center; height: 100vh; font-size: 2em; color: beige;">Onyi tulia...</div>
+     <div id="loginForm" style="display: none;">
+         <form action="home2.html" method="get" target="-blank">
+             <div class="login-box">
+                 <h1>Login</h1><br>
+                 <p>Email:</p>
+                 <input type="email" placeholder="Enter email" name="email" required
+                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.com$" 
+                     title="Correct format of mail" ><br><br>
+                 <p>Password:</p>
+                 <input type="password" id="password" placeholder="Enter password" required><br><br>
+             </div>
+             <div class="checkbox">
+                 <input type="checkbox" id="showPassword" onclick="togglePassword()">
+                 <label for="showPassword">Show Password</label><br><br>
+                 <button type="submit" style="color: white;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">SIGN IN</button>
+                 <br><br>
+                 <p>Forgot
+                     <a href="forgot"> Username/Password?</a>
+                 </p>
+                 <p>Dont have an account?
+                     <a href="sign up">Sign up</a>
+                 </p>
+             </div>
+         </form>
+     </div>
+     <script>
+         function togglePassword() {
+             var passfield = document.getElementById('password');
+             if (passfield.type === "password") {
+                 passfield.type = "text";
+             } else {
+                 passfield.type = "password";
+             }
+         }
+         setTimeout(function(){
+             document.getElementById('loading').style.display = 'none';
+             document.getElementById('loginForm').style.display = 'block';
+         }, 100);
+     </script>
+
+ 
+ <html>
+ 
