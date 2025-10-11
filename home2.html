@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+ <link rel="icon" href="valar.jpg" type="image/x-icon">
+
+  <title>Valar.com</title>
+  <link rel="stylesheet" href="home2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/cd2f42c46e.js" crossorigin="anonymous"></script>
+</head>
+<body>   
+ 
+  <nav>
+    
+    <div class="nav-container">
+      <div class="profile">
+      <img src="/images/pup.png" alt="my logo">
+      <span id="displayName">pfp</span>
+    </div>
+      <div class="nav-links">
+        <a href="#Home"  onclick="gotoslide(0)" class="active">Home</a>
+        <a href="#About"  onclick="gotoslide(1)">About</a>
+        <a href="#Skills"   onclick="gotoslide(2)">Skills</a>
+        <a href="#Contacts"   onclick="gotoslide(3)">Contacts</a>
+        <a href="login2.html">Login</a>
+      </div>
+      <div class="search-bar">
+            <input type="text" placeholder="Search..." class="search-input">
+            <i class="fa fa-search"></i>
+      
+          </div>
+      <div class="hamburger"><!--to make the nav bar shrink on phones-->
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="slider" id="slider"> 
+    <!--Home section-->
+    <section id="Home" class="Home">
+      <div class="container">
+         <div class="intro-text">
+     <h3 class="subtitle2">Web Developer 
+      <i class="fa-solid fa-code"></i>
+        web Designer</h3>
+      <h2 class="subtitle" >Hi, Im <span class="name"> Emmanuel</span><br>
+        From Kenya</h2>
+       <p>Turning Ideas into clean <br>user friendly website</p>
+         </div>
+          <div class="photo"> 
+       <img src="/images/myimg.jpg" alt="myimg" class="image">
+         </div>
+      </div>
+
+ 
+    </section>
+
+                    <!---about--->
+    <section id="About" class="About">
+      <h1>About <span class="name">Me</span></h1>
+      <br>
+      <div class="about-container">
+        <!--left img-->
+      <div class="top">
+      <img src="/images/me.png" alt="headphones" class="img">
+      </div>
+      <!---right content-->
+<div class="about-wrapper">
+      <div class="about-text">
+          <h2 class="wat"><u>Who Tf am I ?</u></h2><br>
+    <ol style="list-style: disc;">
+      <li> I am a web developer with a passion <br> 
+      for creating beautiful and functional websites.</li>
+      <li>Lets build something great together!</li>
+      <li>Join me?</li>
+    </ol>
+  <a href="mailto:kipronoemmanuel911@gmail.com"><button class="hire">Hire Me</button></a>  
+     </div>
+
+      <div class="info"> 
+      <h2 class="wat"><u> More About Me! </u></h2><br>
+      <ul style="list-style-type:none;">
+        <li><strong>Profile:</strong> Web Developer</li>
+        <li><strong>Name:</strong> Emmanuel Kiprono</li>
+        <li><strong>Age:</strong> 20</li>
+        <li><strong>Email:</strong> kipronoemmanuel911@gmail.com</li>
+        <li><strong>Phone:</strong> +254 114581500</li>
+        <li><strong>Zipcode:</strong> 3900</li>
+        <li><strong>Hobbies:</strong> Coding, Gaming, Animating</li>
+        <li><strong>Language:</strong> English, Swahili</li>
+      </ul>
+      </div>
+      </div>
+   
+
+<div class="what">
+    
+  <h2 class="wat"><u> What I Do!</u></h2><br>
+  <div class="box-container">
+     <div class="box">
+      <i class="fa-solid fa-pen-nib"></i><br>
+      </h3><b>Web Design</b></h3>
+      <p class="des">The most modern and high quality website made at proffesional level</p>
+      <button  class="hire">View</button>
+     </div>
+     <div class="box">
+      <i class="fa-solid fa-code"></i>
+      <h3><b>Web Development</b></h3>
+      <p class="des">Modern website created development at proffesional level</p>
+      <button  class="hire">View</button>
+       
+    </div>
+     <div class="box">
+      <i class="fa-solid fa-film"></i>
+      <h3><b>Animation</b></h3>
+      <p class="des">I also make simple 2d animations though at beginner level</p>
+      <button  class="hire">View</button>
+    </div>
+     <div class="box">
+      <i class="fa-solid fa-database"></i>
+      <h3><b>Backend</b></h3>
+      <p class="des">Back end site made at professional level</p>
+      <button  class="hire">View</button>
+     
+    </div>
+     satoru
+  </div>
+</div>
+   
+ <!---- <div id="bottom" class="bottom">
+      <img src="books.png" alt="pic of a book" class="img">
+
+      </div>-->
+
+      </section>
+      <section id="Skills" class="Skills">
+
+        <h1>My <span class="name">Skills</span></h1>
+        <!--Languages-->
+        <h2 class="section-title">Technical Skills</h2>
+        <div id="skill-container">
+       <div class="skill-box">
+            <i class="fa-brands fa-python"></i> <span class="py"><b>Python</b></span>
+            <p>I have completed 2 projects using python <br>
+            I can make small games using Pygame
+            </p>
+      </div>
+
+     <div class="skill-box">
+            <i class="fa-regular fa-file-code"></i>
+              <span><b>Html,Css,Javasccript</b></span>
+            <p>Managed to make a functional frontend website using this cool tools</p>
+     </div>
+     <div class="skill-box">
+       <i class="fa-solid fa-c">++</i>
+        <span>C plus</span>
+        <p >Still in process of learning but I have Managed to complete tasks</p>
+     </div>
+     <div class="skill-box">
+     <i class="fa-brands fa-java"></i> <span class="text4"><b>Java</b></span>
+      <p >Currently exploring object oriented programming and backend development .</p>
+     </div>
+        </div>
+     <h2 class="section-title">Tools I Use</h2>
+  <div class="tech-stack">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="tool-icon">
+    <i class="fa-brands fa-figma"></i>
+    <i class="fa-brands fa-github"></i>
+    <i class="fa-brands fa-linkedin"></i>
+
+    
+  
+  </div>
+    <!-- Currently Learning -->
+  <h2 class="section-title">Currently Learning</h2>
+  <ul class="learning">
+    <li>React.js</li>
+    <li>APIs & Databases</li>
+    <li>Version Control (Git)</li>
+  </ul>
+      </section>
+<!--CONTACTS SECTION-->
+      <section id="Contacts" class="Contacts">
+        <h1>Contact <span class="name">Me</span></h1>
+  <div class="row1">
+    <div class="Contacts-container">
+          <div id="knowme" class="knowme">
+            <h2 class="touch">Get In Touch</h2>
+             <span class="myconts">.Get to know me through various platforms in the description below <br>
+              .Lets work together in making cool websites and continue learning
+             </span>
+          </div>
+    <div class="reachme">
+            <div class="contact-box">
+          <i class="fa-solid fa-phone"></i>
+                 </i><p class="myconts">Call Me:</p><br>
+                <a href="tel:+254114581500" class="phoneno">+2541145811500</a>
+            </div>
+              <div class="contact-box">
+              <i class="fa-solid fa-envelope"></i> 
+                    <p class="myconts">Email Me:</p>
+                    <a href="mailto:kemboimmanueli@gmail.com" class="phoneno">Kiprono</a>
+              </div>
+                <div class="contact-box">
+                <i class="fa-solid fa-globe"></i> 
+                      <p class="myconts">Website:</p>
+                      <a href="valor.com" class="phoneno">www.valar.com</a>
+                 </div>
+                 <div class="contact-box">
+                  <i class="fa-solid fa-comment"></i>      
+                       <p class="myconts">Text Me:</p>
+                       <a href="https://wa.me/+254114581500" class="phoneno">WhatsApp</a>
+                  </div>
+   </div> 
+   </div>
+     <!--Contact form-->
+        <div id="digits" class="contact-form">
+          <h2 class="touch">Short message</h2>
+          <input type="text" placeholder="Enter name" class="nem">
+          <input type="tel" required  name="phone"  class="phone"  placeholder="Enter your phone number"><br>
+          <input type="email" placeholder="Enter Email" class="Email" required><br>
+          <input type="text" placeholder=" Your Message" class="Message"><br>
+          <button type="submit" class="hire">Submit</button>
+        </div>
+  </div>
+         <!---follow me-->
+        <div class="follow">
+          <h2 class="touch">Follow Me on</h2>
+          <a href="http://discord.com/drugoon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i></a>
+          <a href="https://tiktok.com /Vhagar"target="-blank"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://linkedin.com/in/emmanuel-kiprono-14a800389"target="_blank"> <i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/unknown" target="_blank">   <i class="fa-brands fa-x-twitter "></i></a>
+          <a href="https://github.com/echoesrule" target="_blank"> <i class="fa-brands fa-github "></i> </a> 
+          <a href="https://wa.me/+254114581500" target="_blank"> <i class="fa-brands fa-whatsapp "></i> </a>
+          <a href="https://instagram.com/S.k.r.e.a.m.z" target="_blank"> <i class="fa-brands fa-instagram "></i></a>
+        </div>
+  <div id="map-container"class="maps">
+          <h2 class="touch">Where I'm Located</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d496.63422596529307!2d37.82802761656595!3d-1.3839378660489443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1sen!2ske!4v1758912951732!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </iframe>
+        </div>
+        <!--News form-->
+         <div id="news" class="news">
+          <h2 class="touch"> My newslaters</h2>
+          <p>Get the latest news about my upcoming projects,<br>updates and latest tweaks through my newsletters</p>
+
+          <input type="email" placeholder="email"required class="Email">
+          <button type="submit" class="hire">Submit</button>
+          </div>
+         
+         
+         <div id="others" class="others">
+          <h3>.logo</h3><br>
+          <p class="myconts">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Tempora, voluptates totam harum iste doloribus cum! <br></p>
+          <div id="nav" class="navi">
+            <h2 class="touch">Navigation</h2>
+               <a href="#Home"  onclick="gotoslide(0)" >Home</a><br>
+              <a href="#About"  onclick="gotoslide(1)">About</a><br>
+              <a href="#Skills"   onclick="gotoslide(2)">Skills</a><br>
+              <a href="#Contacts"   onclick="gotoslide(3)">Contacts</a><br>
+              <a href="login2.html">Login</a>
+          </div>
+
+          <div id="work" class="work">
+            <h2 class="touch">Working hours</h2>
+            <p class="myconts">Open from Mon to Friday <br>
+              From 7am -5pm
+            </p>
+            <div id="no" class="no">
+            <a href="tel:+254114581500" class="phoneno"> 
+             <i class="fa-solid fa-phone"></i>
+              Call Me: <br>+2541145811500</a>
+            </div>
+        </div>
+
+
+
+      </section>
+    
+
+    <script>
+      function gotoslide(index) {
+        const slider = document.getElementById("slide");
+        slider.style.transform = `translateX(-${index * 100}vw)`;
+      }
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      hamburger .addEventListener('click', () => {
+        navLinks.classList.toggle(`active`)}
+        );
+         document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= sectionTop - sectionHeight / 3) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+          link.classList.add("active");
+        }
+      });
+    });
+  });
+  
+  const searchInput=document.querySelector(`.search-input`);
+  const searchIcon=document.querySelector(`.fa-search`);
+
+  //what happens when sth is searched
+  function performSearch(){
+    const query=searchInput.value.toLowerCase().trim();
+     if (!query) return; 
+    //letting user search for links in my web
+       if (query.includes('about')) {
+      document.querySelector('#About').scrollIntoView({ behavior: 'smooth' });
+    } else if (query.includes('skills')) {
+      document.querySelector('#Skills').scrollIntoView({ behavior: 'smooth' });
+    } else if (query.includes('contact')) {
+      document.querySelector('#Contacts').scrollIntoView({ behavior: 'smooth' });
+    } else if (query.includes('home')) {
+      document.querySelector('#Home').scrollIntoView({ behavior: 'smooth' });
+    } 
+    else {
+   window.open(`https://www.google.com/search?q=${encodeURIComponent(query)}`, '_blank');
+    }
+    
+    searchInput.value = '';//clear search bar
+  }
+    //when search icon is clicked it does the action
+    searchIcon.addEventListener('click', performSearch);
+      searchInput.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') performSearch();
+  });//listens whether the key or mouse has been clicked
+  const savedUsername = localStorage.getItem('username');
+
+if (savedUsername) {
+  document.getElementById('displayName').textContent = savedUsername;
+}
+    </script>
+    <div id="footer">
+            <footer class="copyright">2025 @ Valar.com  All  Rights  Reserved</footer>
+
+    </div>
+
+  </body>
+
+  </html>
+
