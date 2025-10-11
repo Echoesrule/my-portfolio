@@ -1,6 +1,6 @@
    body {
       font-family: 'Poppins', sans-serif;
-      background-image:url(/images/grad2.jpg);
+      background-image:url(images/grad2.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -190,4 +190,5 @@ transform: translateY(-12px);
     .container.right-panel-active .overlay-right {
       transform: translateX(20%);
     }
+
     
