@@ -194,7 +194,8 @@ transform: translateY(-12px);
 @media (max-width: 900px) {
   .container {
     width: 100%;
-    max-width: 100%;
+    max-width: 95%;
+     max-height:fit-content;
     min-height: 480px;
     margin: 0 auto;
     position: relative;
@@ -322,6 +323,7 @@ transform: translateY(-12px);
 
 
     
+
 
 
 
