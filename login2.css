@@ -314,11 +314,11 @@ transform: translateY(-12px);
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 12px;
   }
 
   p {
-    font-size: 14px;
+    font-size: 5px;
   }
 }
 /*adjust height*/
@@ -357,6 +357,7 @@ body {
    border:none;
 }
 }
+
 
 
 
