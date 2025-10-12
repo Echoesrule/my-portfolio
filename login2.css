@@ -196,7 +196,7 @@ transform: translateY(-12px);
     width: 100%;
      height:100dvh;
     max-width: 98%;
-     max-height:fit-content;
+     max-height:60%;
     min-height: 180px;
     margin: 0 auto;
     position: relative;
@@ -315,7 +315,7 @@ transform: translateY(-12px);
   }
 
   form {
-    padding: 20px;
+    padding: 10px;
   }
 
   input {
@@ -323,22 +323,11 @@ transform: translateY(-12px);
   }
 
   h1 {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   p {
-    font-size: 5px;
-  }
-}
-/*adjust height*/
-@supports (-webkit-touch-callout: none) {
-  .container {
-    min-height: 100dvh; 
-  }
-
-  body {
-    height: 100dvh;
-    overflow: hidden;
+    font-size: 9px;
   }
 }
 @media(max-width:900px){
@@ -366,6 +355,7 @@ body {
    border:none;
 }
 }
+
 
 
 
