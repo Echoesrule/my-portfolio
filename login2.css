@@ -214,7 +214,16 @@ transform: translateY(-12px);
     left: 0;
     z-index: 2;
   }
-
+  .sign-in-container h1 , .sign-up-container h1 {
+      color: #ff7301;
+     font-size:12px;
+      
+    }
+    .sign-in-container p {
+      color: #b3b0b0;
+      font-weight: 500;
+       
+    }
   .sign-up-container {
     left: 50%;
     opacity: 0;
@@ -357,6 +366,7 @@ body {
    border:none;
 }
 }
+
 
 
 
