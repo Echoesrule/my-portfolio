@@ -196,7 +196,7 @@ transform: translateY(-12px);
     width: 100%;
      height:100dvh;
     max-width: 98%;
-     max-height:100%;
+     max-height:fit-content;
     min-height: 180px;
     margin: 0 auto;
     position: relative;
@@ -341,9 +341,9 @@ transform: translateY(-12px);
     overflow: hidden;
   }
 }
-@media(900px){
+@media(max-width:900px){
 html, body {
-  overflow: auto;
+  overflow: hidden;
   height: 100%;
 }
 
@@ -366,6 +366,7 @@ body {
    border:none;
 }
 }
+
 
 
 
