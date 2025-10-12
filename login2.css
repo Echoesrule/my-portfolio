@@ -320,9 +320,21 @@ transform: translateY(-12px);
     font-size: 14px;
   }
 }
+/*adjust height*/
+@supports (-webkit-touch-callout: none) {
+  .container {
+    min-height: 100dvh; 
+  }
+
+  body {
+    height: 100dvh;
+    overflow: hidden;
+  }
+}
 
 
     
+
 
 
 
