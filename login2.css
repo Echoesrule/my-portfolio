@@ -332,22 +332,27 @@ transform: translateY(-12px);
     overflow: hidden;
   }
 }
-
+@media(900px){
 html, body {
   overflow: hidden;
   height: 100%;
 }
 
 body {
-  height: 100dvh; /* Dynamic viewport fix */
+   display:flex;
+   justify-content:center;
+   align-items:center;
+  height: 100svh; /* Dynamic viewport fix */
   background-color: #000; /* fallback in case image doesn't fill */
 }
 
 .container {
-  height: 100dvh;
+  height: 100%;
+   margin:0;
+   border:none;
+}
 }
 
-    
 
 
 
