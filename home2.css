@@ -1133,22 +1133,22 @@ transition: transform 0.2s ease , box-shadow 0.2s ease;
     position: fixed;
     top: 0;
     right: -50%; /* hidden off-screen */
-    height: fit-content;
-    width: 60px;
-    background: #242420;
+    height:400px;
+    width: 200px;
+    background: #1a1a1a;
     flex-direction: column;
     align-items: flex-start;
     border-radius: 12px;
     padding: 20px 20px;
     gap: 20px;
     transition: right 0.4s ease;
-    box-shadow: -3px 0 10px rgba(0,0,0,0.4);
+    box-shadow: -3px 0 10px rgba(22,22,22,0.4);
     z-index: 25;
   }
   .nav-links a {
     scroll-snap-align: start;
     white-space: nowrap;
-    font-size: 10px;
+    font-size: 20px;
     text-align: center;
     flex-shrink: 0;
     padding: 0px 0px;  
@@ -1214,4 +1214,5 @@ transition: transform 0.2s ease , box-shadow 0.2s ease;
   .body{
     background-color:black;
 }
+
 
