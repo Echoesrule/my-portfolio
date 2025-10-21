@@ -392,12 +392,15 @@ padding: 20px auto;
 }
 strong{
 color: #1a1919;
+  font-size:medium;
+  font-family: 'Fredoka One', cursive;
 font-weight: bold;
 }
 .about-text ol {
+  font-family: 'Fredoka One', cursive;
   text-align: left;
   margin-left: 20px;
-  font-size: 1.5em;
+  font-size: medium;
 }
 .hire {
   background: linear-gradient(90deg, #f7d957, #c2ec07);
@@ -1221,6 +1224,7 @@ transition: transform 0.2s ease , box-shadow 0.2s ease;
 }
 
 }
+
 
 
 
