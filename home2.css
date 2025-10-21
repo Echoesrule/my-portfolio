@@ -1111,6 +1111,37 @@ transition: transform 0.2s ease , box-shadow 0.2s ease;
   .About h1 {
     font-size: 1.8rem;
   }
+    #skill-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  gap: 20px; /* space between boxes */
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+.skill-box {
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 1 / 1;           /* keeps equal width & height */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;        /* stack text properly */
+  justify-content: center;
+  align-items: center;
+  text-align: center;            /* centers text */
+  padding: 10px;                 /* adds breathing room */
+  overflow: hidden;              /* hides anything that sticks out */
+  word-wrap: break-word;         /* breaks long words cleanly */
+  box-sizing: border-box;
+}
+.skill-box p {
+  font-size: 1rem;
+
+}
+.skill-box span {
+  font-size: 1.2rem;
+}
 }
 
 @media (max-width: 480px) {
@@ -1225,6 +1256,7 @@ transition: transform 0.2s ease , box-shadow 0.2s ease;
 }
 
 }
+
 
 
 
