@@ -321,7 +321,7 @@ html{
 .info li{
   margin-bottom: 9px;
   text-align: left;
-  font-size: 1.5em;
+  font-size: medium;
   font-weight: lighter;
   color: #000;
   justify-content: center;
@@ -1221,6 +1221,7 @@ transition: transform 0.2s ease , box-shadow 0.2s ease;
 }
 
 }
+
 
 
 
