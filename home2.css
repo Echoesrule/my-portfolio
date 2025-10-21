@@ -1133,7 +1133,7 @@ transition: transform 0.2s ease , box-shadow 0.2s ease;
     .nav-links {
     position: fixed;
     top: 0;
-    right: -50%; /* hidden off-screen */
+    right: -100%; /* hidden off-screen */
     height:400px;
     width: 200px;
     background: #1a1a1a;
@@ -1215,6 +1215,7 @@ transition: transform 0.2s ease , box-shadow 0.2s ease;
   .body{
     background-color:black;
 }
+
 
 
 
