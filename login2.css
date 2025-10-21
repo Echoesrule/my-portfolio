@@ -340,9 +340,10 @@ html, body {
 
 body {
   height: 100dvh; /* Dynamic viewport fix */
-  background-color: #000; /* fallback in case image doesn't fill */
+
 }
 
 .container {
   height: 100dvh;
 }
+
