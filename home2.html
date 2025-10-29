@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
- <link rel="icon" href="images/valar.jpg" type="image/x-icon">
+ <link rel="icon" href="images/retro.jpg" type="image/x-icon">
 
-  <title>Valar.com</title>
+  <title>https://echoesrule.github.io/my-portfolio/</title>
   <link rel="stylesheet" href="home2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/cd2f42c46e.js" crossorigin="anonymous"></script>
@@ -17,15 +19,16 @@
     
     <div class="nav-container">
       <div class="profile">
-      <img src="images/profile.jpg" alt="loading..." >
+      <img src="images/profile2.jpg" alt="loading..." class="pfp"  >
+
       <span id="displayName">pfp</span>
     </div>
       <div class="nav-links">
-        <a href="#Home"  onclick="gotoslide(0)" class="active">Home</a>
+        <a href="#Home"  onclick="gotoslide(0)">Home</a>
         <a href="#About"  onclick="gotoslide(1)">About</a>
         <a href="#Skills"   onclick="gotoslide(2)">Skills</a>
         <a href="#Contacts"   onclick="gotoslide(3)">Contacts</a>
-        <a href="login2.html">Login</a>
+        <a href="login2.html">Logout</a>
       </div>
       <div class="search-bar">
             <input type="text" placeholder="Search..." class="search-input">
@@ -52,9 +55,18 @@
       <h2 class="subtitle" >Hi, Im <span class="name"> Emmanuel</span><br>
         From Kenya</h2>
        <p>Turning Ideas into clean <br>user friendly website</p>
+       <div class="platforms">
+          <a href="https://instagram.com/S.k.r.e.a.m.z" target="_blank"> <i class="fa-brands fa-instagram "></i></a>
+          <a href="http://discord.com/drugoon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i></a>
+          <a href="https://linkedin.com/in/emmanuel-kiprono-14a800389"target="_blank"> <i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/unknown" target="_blank">   <i class="fa-brands fa-x-twitter "></i></a>
+          <a href="https://github.com/echoesrule" target="_blank"> <i class="fa-brands fa-github "></i> </a> 
+          <a href="https://wa.me/+254114581500" target="_blank"> <i class="fa-brands fa-whatsapp "></i> </a>
+         
+       </div>
          </div>
           <div class="photo"> 
-       <img src="images/myimg.jpg" alt="myimg" class="image">
+       <img src="/images/mee.png" alt="myimg" class="image">
          </div>
       </div>
 
@@ -68,76 +80,416 @@
       <div class="about-container">
         <!--left img-->
       <div class="top">
-      <img src="images/me.png" alt="headphones" class="img">
+      <img src="/images/me.png" alt="headphones" class="img">
       </div>
       <!---right content-->
 <div class="about-wrapper">
       <div class="about-text">
-          <h2 class="wat"><u>Who Tf am I ?</u></h2><br>
-    <ol style="list-style: disc;">
-      <li> I am a web developer with a passion <br> 
-      for creating beautiful and functional websites.</li>
-      <li>Lets build something great together!</li>
-      <li>Join me?</li>
-    </ol>
-  <a href="mailto:kipronoemmanuel911@gmail.com"><button class="hire">Hire Me</button></a>  
-     </div>
+          <h2 class="wat"><u>Who am I ?</u></h2>
+          <h3 class="name">Emmanuel <br>
+          Kiprono</h3>
+          <p class="txt">Web developer</p>
+           <p>I'm a 20-year-old web developer from Kenya, passionate about creating user-friendly websites. I specialize in web design and development, with a keen interest in backend technologies. My goal is to turn ideas into clean, functional websites that enhance user experience.</p>
+          <a href="mailto:kipronoemmanuel911@gmail.com"><button class="hire">Hire Me</button></a>  
+          </div>
 
-      <div class="info"> 
-      <h2 class="wat"><u> More About Me! </u></h2><br>
-      <ul style="list-style-type:none;">
-        <li><strong>Profile:</strong> Web Developer</li>
-        <li><strong>Name:</strong> Emmanuel Kiprono</li>
-        <li><strong>Age:</strong> 20</li>
-        <li><strong>Email:</strong> kipronoemmanuel911@gmail.com</li>
-        <li><strong>Phone:</strong> +254 114581500</li>
-        <li><strong>Zipcode:</strong> 3900</li>
-        <li><strong>Hobbies:</strong> Coding, Gaming, Animating</li>
-        <li><strong>Language:</strong> English, Swahili</li>
-      </ul>
-      </div>
+     
       </div>
    
-
+<div class="main-content">
 <div class="what">
-    
-  <h2 class="wat"><u> What I Do!</u></h2><br>
+  <h2 class="wat">What I Do!</h2><br>
   <div class="box-container">
      <div class="box">
       <i class="fa-solid fa-pen-nib"></i><br>
-      </h3><b>Web Design</b></h3>
+      <h3><b>Web Design</b></h3>
       <p class="des">The most modern and high quality website made at proffesional level</p>
-      <button  class="hire">View</button>
+      <button  class="hire" onclick="showSection('web-design')">Learn More</button>
      </div>
      <div class="box">
       <i class="fa-solid fa-code"></i>
       <h3><b>Web Development</b></h3>
       <p class="des">Modern website created development at proffesional level</p>
-      <button  class="hire">View</button>
+      <button  class="hire" onclick="showSection(`web-development`)">Learn More</button>
        
     </div>
      <div class="box">
       <i class="fa-solid fa-film"></i>
       <h3><b>Animation</b></h3>
       <p class="des">I also make simple 2d animations though at beginner level</p>
-      <button  class="hire">View</button>
+      <button  class="hire" onclick="showSection(`animation`)" >Learn More</button>
     </div>
      <div class="box">
       <i class="fa-solid fa-database"></i>
       <h3><b>Backend</b></h3>
       <p class="des">Back end site made at professional level</p>
-      <button  class="hire">View</button>
-     
+      <button  class="hire" onclick="showSection(`backend`)">Learn More</button>
     </div>
-     satoru
+  </div>
+  <div class="information">
+    <h2 class="wat">More About Me!</h2>
+    /* <div class="info"> 
+      <div class="info-content">
+        <strong>Profile:</strong> 
+        <p>Web Developer</p>
+      </div>
+      <div class="info-content">
+        <strong>Name:</strong> 
+         <p> Emmanuel Kiprono</p>
+
+      </div>
+      <div class="info-content">
+        <strong>Age:</strong> 
+         <p>20</p>
+
+      </div>
+      <div class="info-content">
+        <strong>Email:</strong> 
+          <p>kipronoemmanuel911@gmail.com</p>
+
+      </div>
+      <div class="info-content">
+        <strong>Phone:</strong>
+       <p> +254 114581500</p>
+
+      </div>
+      <div class="info-content">
+        <strong>Zipcode:</strong>
+        <p> 3900</p>
+
+      </div>
+      <div class="info-content">
+        <strong>Hobbies:</strong> 
+          <p>Coding, Gaming, Animating</p>
+
+      </div>
+      <div class="info-content">
+        <strong>Language:</strong> 
+        <p>English, Swahili</p>
+
+      </div>
+      </div>*/
   </div>
 </div>
-   
- <!---- <div id="bottom" class="bottom">
-      <img src="books.png" alt="pic of a book" class="img">
+</div> 
+</section>
 
-      </div>-->
+  <!-------------------->
+<!-- Hidden Fullscreen Sections -->
+  <!-------------------->
+<section class="page-section" id="web-design">
+<h1>Web Design</h1>
+  <p>Here are some of the web design services I offer:</p>
+    <div class="more">
+      <div class="responsive">
+          <span></span>
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <h2>Responsive Design:</h2>
+         <p>websites that adapt seamlessly to different screen sizes and devices.</p>
+          <img src="images/responsive.jpg" alt="loading....">
+      </div>
+      <div class="responsive">
+        <i class="fa-solid fa-palette"></i>
+        <h2>User Interface (UI) Design:</h2> 
+          <p>
+            Crafting visually appealing and intuitive interfaces for websites and applications.
+          </p>
+          <img src="images/canvaui.jpg" alt="loading....">
+      </div>
+      <div class="responsive">
+      <i class="fa-solid fa-user-check"></i>
+      <h2>  User Experience (UX) Design:  </h2>
+       <p> Enhancing user satisfaction by improving the usability and accessibility of websites.</p>
+          <img src="images/ux.jpg" alt="loading....">
+      </div>
+      <div class="responsive">
+      <i class="fa-solid fa-font"></i>
+      <h2>Graphic Design:</h2>
+        <p> Designing logos, banners, and other visual elements to enhance brand identity.</p>
+          <img src="images/graphic.jpg" alt="loading....">
+      </div>
+      <div class="responsive">
+      <i class="fa-solid fa-vector-square"></i>
+      <h2>Wireframing and Prototyping:</h2>
+        <p>Developing wireframes and prototypes to visualize website layouts and functionality before development.</p>
+          <img src="images/wireframe.jpg" alt="loading....">
+      </div>
+      <div class="responsive">
+      <i class="fa-solid fa-brush"></i>
+      <h2>Branding and Identity: </h2>
+        <p> cohesive branding elements that reflect the client's identity across their website.</p>
+          <img src="images/branding.jpg" alt="loading....">
+       </div>
+    </div>
+       <div class="tools">
+         <h2>Tools I use</h2>
+         <ul>
+          <li>
+            Canva
+             <img src="images/canvas.png" alt="Canva">
+          </li>
+          <li>Adobe Photoshop
+             <img src="images/photoshop.png" alt="Adobe Photoshop">
+          </li>
+          <li>Figma
+             <img src="images/figma.png" alt="Figma">
+          </li>
+          <li>Photopea
+             <img src="https://www.photopea.com/promo/icon512.png" alt="Photopea">
+          </li>
+          <li>Google fonts
+             <img src="images/google-fonts.png" alt="Google Fonts">
+          </li>
+          <li>Font Awesome
+          <img src="images/fontawesome.png" alt="font awesome...">
 
+          </li>
+         </ul>
+    </div>
+    <button class="hire" onclick="goBack()">Go Back</button>
+  </section>
+  <!-------------------->
+ <!-- Web Development Section -->
+  <!-------------------->
+
+  <section class="page-section" id="web-development">
+    <h1>Web Development</h1>
+    <p>I offer a range of web development services to help businesses establish a strong online presence.</p>
+    <div class="more web-more">
+      <div class="responsive">
+        <h2>Front-End Development</h2>
+        <p>Building responsive and visually appealing user interfaces using HTML, CSS, and JavaScript.</p>
+        <img src="images/frontend.jpeg" alt="Frontend">
+      </div>
+      <div class="responsive">
+        <h2>Back-End Development</h2>
+        <p>Creating robust server-side applications and databases to handle data and business logic.</p>
+        <img src="images/login.jpg" alt="Backend">
+      </div>
+      <div class="responsive">
+        <h2>Full-Stack Development</h2>
+        <p>Combining front-end and back-end development to deliver end-to-end web solutions.</p>
+        <img src="images/code.jpg" alt="Fullstack">
+      </div>
+      <div class="responsive">
+        <h2>API Integration</h2>
+        <p>Integrating third-party APIs to enhance website functionality, like payments or social media.</p>
+        <img src="images/api.jpg" alt="API Integration">
+        <img src="images/api1.jpg" alt="">
+        <img src="images/Api2.jpg" alt="">
+
+      </div>
+      
+    </div>
+    <div class="tools">
+         <h2>Tools I use</h2>
+         <ul>
+          <li>
+            Vs Code
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="tool-icon">
+
+          </li>
+
+          <li>open source github
+    <i class="fa-brands fa-github"></i>
+
+          </li>
+          <li>open Ai
+             <img src="images/chat-gpt (1).png"alt="chatgpt">
+          </li>
+          <li>Xampp
+             <img src="images/xampp.png" alt="Xampp">
+          </li>
+          <li>mysql
+              <img src="images/mysql.png" alt="mysql">
+          </li>
+          <li>PHP
+          <img src="images/php-code.png" alt="php">
+          </li>
+         </ul>
+    </div>
+    <button class="hire" onclick="goBack()">Go Back</button>
+  </section>
+
+ <!-- -------------------->
+ <!-- Animation Section -->
+ <!-------------------- -->
+  <section class="page-section" id="animation">
+    <h1>Animation</h1>
+    <p>I create simple 2D animations using software like Adobe Animate, Toon Boom Harmony, and Synfig Studio.</p>
+    <div class="more animation-more">
+      <div class="responsive">
+        <h2>Character Animation</h2>
+        <p>Creating animated characters for storytelling or promotional purposes.</p>
+        <img src="images/character.jpg" alt="Character Animation">
+      </div>
+      <div class="responsive">
+        <h2>Motion Graphics</h2>
+        <p>Designing dynamic visual elements and text animations for videos and presentations.</p>
+        <img src="images/motion graphics.jpg" alt="Motion Graphics">
+      </div>
+      <div class="responsive">
+        <h2>2D Storyboarding</h2>
+        <p>Developing storyboards to plan out animation sequences and narratives.</p>
+        <img src="images/storyboarding.jpg" alt="Storyboarding">
+      </div>
+      <div class="responsive">
+        <h2>Simple Visual Effects</h2>
+        <p>Adding basic visual effects to enhance animations and videos.</p>
+        <img src="images/visualeffect.jpg" alt="Visual Effects">
+        <img src="images/vfx.jpg" alt="loading....">
+        <img src="images/morph.jpg" alt="loading....">
+
+      </div>
+    </div>
+    <div class="tools">
+         <h2>Tools I use</h2>
+         <ul>
+          <li>
+            Adobe Animate
+             <img src="images/animate.png" alt="Adobe Animate"> 
+          </li>
+          <li>open Toonz
+             <img src="images/open-toonz.png"alt="chatgpt">
+          </li>
+          <li>Synfig Studio
+             <img src="https://th.bing.com/th/id/R.128114060475f4682ac4f14fbf1ac121?rik=iL3bBEYALDCmGg&pid=ImgRaw&r=0" alt="loading....">
+          </li>
+          <li>Moho
+              <img src="https://tse2.mm.bing.net/th/id/OIP.JuJP1LHVgNGUm9kvGA3QXgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="loading....">
+          </li>
+          <li>Youtube Tutorials
+          <img src="images/youtube.png" alt="php">
+          </li>
+         </ul>
+    </div>
+
+    <button class="hire" onclick="goBack()">Go Back</button>
+  </section>
+  <!-------------------->
+  <!---BACKEND SECTION-->
+  <!-------------------->
+    <section class="page-section" id="backend">
+      <h1>Backend Development</h1>
+      <p> In backend development, I focus on building the server-side logic and infrastructure that powers web applications. Here are some of the backend development services I offer:
+        <div class="more">
+          <div class="responsive">
+           <h2>Server-Side Programming: </h2>
+           <p>Writing code using languages like Python, Node.js, Ruby, or PHP to handle application logic and data processing.</p>
+           <img src="images/serverside.jpg" alt="loading...">
+          </div>
+           <div class="responsive">
+           <h2>Database Management: </h2>
+           <p> Designing and managing databases using SQL (MySQL, PostgreSQL) or NoSQL (MongoDB) to store and retrieve application data efficiently.</p>
+           <img src="images/dbms.jpg" alt="loading...">
+          </div>
+       
+           <div class="responsive">
+           <h2>Authentication and Authorization: </h2>
+           <p>Implementing secure user authentication and authorization mechanisms to protect sensitive data and resources.</p>
+           <img src="images/authentication.jpg" alt="loading...">
+          </div>
+           <div class="responsive">
+           <h2>Performance Optimization:</h2>
+           <p>Enhancing the performance of backend systems through caching, load balancing, and efficient database queries.</p>
+           <img src="images/performance.jpg" alt="looading...">
+          </div>
+          <div class="responsive">
+          <h2>Cloud Integration: </h2>
+          <p>Deploying backend applications on cloud platforms like AWS, Azure, or Heroku for scalability and reliability.</p>
+          <img src="images/cloud.jpg" alt="loading...">
+          </div>
+        </div>
+         <div class="tools">
+         <h2>Tools I use</h2>
+         <ul>
+          <li>
+            Vs Code
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="tool-icon">
+
+          </li>
+
+          <li>open source github
+    <i class="fa-brands fa-github"></i>
+
+          </li>
+          <li>open Ai
+             <img src="images/chat-gpt (1).png"alt="chatgpt">
+          </li>
+          <li>Xampp
+             <img src="images/xampp.png" alt="Xampp">
+          </li>
+          <li>mysql
+              <img src="images/mysql.png" alt="mysql">
+          </li>
+          <li>PHP
+          <img src="images/php-code.png" alt="php">
+          </li>
+         </ul>
+    </div>
+
+        <button class="hire" onclick="goBack()">Go Back</button>
+    </section>
+<script>
+let lastScrollPosition = 0;
+let isAnimating = false;
+
+function showSection(id) {
+  if (isAnimating) return; // prevent spamming clicks while animating
+
+  const section = document.getElementById(id);
+  if (!section) return;
+  // save scroll
+  lastScrollPosition = window.scrollY || window.pageYOffset;
+  // hide other sections (defensive)
+  document.querySelectorAll('.page-section.active').forEach(s => {
+    s.classList.remove('active');
+    s.classList.remove('exiting');
+  });
+
+  // lock background scroll and hide main content via class
+  document.body.classList.add('lock-scroll');
+  document.querySelector('.main-content')?.classList.add('hidden-by-section');
+
+  // show the requested section
+  section.classList.remove('exiting');
+  section.classList.add('active');
+}
+
+function goBack() {
+  if (isAnimating) return;
+  const section = document.querySelector('.page-section.active');
+  if (!section) {
+    // nothing open — safe fallback
+    document.body.classList.remove('lock-scroll');
+    document.querySelector('.main-content')?.classList.remove('hidden-by-section');
+    return;
+  }
+
+  isAnimating = true;
+
+  // add exiting class to trigger exit transition
+  section.classList.add('exiting');
+
+  // wait for transition end on the section (more reliable than setTimeout)
+  const onTransitionEnd = (e) => {
+    // only react to the opacity/transform transition (ignore other properties)
+    if (e.propertyName !== 'opacity' && e.propertyName !== 'transform') return;
+
+    section.classList.remove('active', 'exiting');
+    section.removeEventListener('transitionend', onTransitionEnd);
+
+    // restore main content and scrolling
+    document.querySelector('.main-content')?.classList.remove('hidden-by-section');
+    document.body.classList.remove('lock-scroll');
+
+    // restore scroll position
+    window.scrollTo(0, lastScrollPosition || 0);
+    isAnimating = false;
+  };
+  section.addEventListener('transitionend', onTransitionEnd);
+}
+</script>
       </section>
       <section id="Skills" class="Skills">
 
@@ -145,102 +497,272 @@
         <!--Languages-->
         <h2 class="section-title">Technical Skills</h2>
         <div id="skill-container">
+
        <div class="skill-box">
-            <i class="fa-brands fa-python"></i> <span class="py"><b>Python</b></span>
+            <i class="fa-brands fa-python" style="color: #FFD43B;"></i> 
+            <span ><b>Python</b></span>
             <p>I have completed 2 projects using python <br>
             I can make small games using Pygame
             </p>
+            <button class="hire" onclick="openGallery(['images/pygame.png','images/pygame2.png'])">View Screenshot</button>
       </div>
-
      <div class="skill-box">
-            <i class="fa-regular fa-file-code"></i>
-              <span><b>Html,Css,Js</b></span>
-            <p>Managed to make a functional frontend website using this cool tools</p>
+            <i class="fa-brands fa-html5" style="color: #FFD43B;"></i>
+              <span><b>Html,Css,</b></span>
+            <p>Managed to make a frontend website using this cool tools</p>
+            <button class="hire" onclick="openGallery(['images/htmlscss.png','images/htmlcss2.png'])">View Screenshot</button>  
      </div>
      <div class="skill-box">
-       <i class="fa-solid fa-c">++</i>
+      <i class="fa-brands fa-square-js" style="color: #FFD43B;"></i>
+      <span>Javasccript</span>
+      <p>Made my frontend website responsive and functional using this language.</p>
+            <button class="hire" onclick="openGallery(['images/java.png'])">View Screenshot</button>
+     </div>
+     <div class="skill-box">
+       <i class="fa-solid fa-c" style="color: #FFD43B;">++</i>
         <span>C plus</span>
         <p >Still in process of learning but I have Managed to complete tasks</p>
+            <button class="hire" onclick="openGallery(['images/cpp.jpg'])">View Screenshot</button>
      </div>
      <div class="skill-box">
-     <i class="fa-brands fa-java"></i> <span class="text4"><b>Java</b></span>
+     <i class="fa-brands fa-java" style="color: #FFD43B;"></i> 
+     <span ><b>Java</b></span>
       <p >Currently exploring object oriented programming and backend development .</p>
+           <button onclick="openGallery(['images/java.png','images/java1.png','images/java2.png'])" class="hire">
+    View Screenshots
+  </button>
      </div>
         </div>
-     <h2 class="section-title">Tools I Use</h2>
-  <div class="tech-stack">
+<div id="image-popup" class="image-popup" aria-hidden="true">
+   <button id="popup-close" class="popup-close">&times;</button>
+  <button id="prev-btn" class="nav-btn">&#10094;</button>
+  <img id="popup-img" src="" alt="Screenshot preview">
+  <button id="next-btn" class="nav-btn">&#10095;</button>
+ >
+</div>
+<script>
+(function() {
+  const popup = document.getElementById('image-popup');
+  const popupImg = document.getElementById('popup-img');
+  const closeBtn = document.getElementById('popup-close');
+  const prevBtn = document.getElementById('prev-btn');
+  const nextBtn = document.getElementById('next-btn');
+
+  let images = [];
+  let currentIndex = 0;
+
+  function showImage(index) {
+    if (index < 0) index = images.length - 1;
+    if (index >= images.length) index = 0;
+    currentIndex = index;
+
+    popupImg.classList.remove('visible');
+    setTimeout(() => {
+      popupImg.src = images[currentIndex];
+      popupImg.onload = () => popupImg.classList.add('visible');
+    }, 200);
+  }
+
+  window.openGallery = function(imgArray) {
+    // move popup to body so fixed positioning is relative to viewport
+const popup = document.getElementById('image-popup');
+if (popup && popup.parentNode !== document.body) {
+  document.body.appendChild(popup);
+}
+    images = imgArray;
+    currentIndex = 0;
+    popup.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    showImage(currentIndex);
+  };
+
+  function closeGallery() {
+    popup.classList.remove('active');
+    popupImg.classList.remove('visible');
+    popupImg.src = '';
+    document.body.style.overflow = '';
+  }
+
+  closeBtn.addEventListener('click', closeGallery);
+  popup.addEventListener('click', e => {
+    if (e.target === popup) closeGallery();
+  });
+  prevBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    showImage(currentIndex - 1);
+  });
+  nextBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    showImage(currentIndex + 1);
+  });
+  document.addEventListener('keydown', e => {
+    if (!popup.classList.contains('active')) return;
+    if (e.key === 'Escape') closeGallery();
+    if (e.key === 'ArrowLeft') showImage(currentIndex - 1);
+    if (e.key === 'ArrowRight') showImage(currentIndex + 1);
+  });
+})();
+</script>
+
+
+     <h2 class="section-title">software I Use</h2>
+  <div class="tools">
+    <ul>
+      <li> 
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="tool-icon">
-    <i class="fa-brands fa-figma"></i>
-    <i class="fa-brands fa-github"></i>
-    <i class="fa-brands fa-linkedin"></i>
+      </li>
+      <li>
+       <img src="images/figma.png" alt="Figma">
+      </li>
+      <li>
+       <img src="images/linkedin.png" alt="linked">
+    
+
+      </li>
+      <li>
+<i class="fa-brands fa-github"></i>
+      </li>
+
+    </ul>
 
     
   
   </div>
     <!-- Currently Learning -->
   <h2 class="section-title">Currently Learning</h2>
-  <ul class="learning">
-    <li>React.js</li>
-    <li>APIs & Databases</li>
-    <li>Version Control (Git)</li>
-  </ul>
+  <div class="learning">
+    <div class="learning-box">
+      <i class="fa-brands fa-react" style="color: #FFD43B;"></i>
+       <p>  React.js</p>
+
+    </div>
+     <div class="learning-box">
+      <i class="fa-brands fa-aws" style="color: #FFD43B;"></i>
+    <p>APIs & Databases</p>
+     </div>
+     <div class="learning-box">
+      <i class="fa-brands fa-git-alt" style="color: #FFD43B;"></i>
+    <p>Version Control (Git) </p>
+     </div>
+
+   <div class="learning-box">
+      <i class="fa-brands fa-node-js" style="color: #FFD43B;"></i>
+      <p>Node.js</p>
+   </div>
+    <div class="learning-box">
+      <i class="fa-brands fa-php" style="color: #FFD43B;"></i>
+       <p>My sql</p>
+       </div>
+      <div class="learning-box">
+        <i class="fa-solid fa-cubes" style="color: #FFD43B;"></i>
+    <p>Object Oriented Programming</p>
+  </div>
+  </div>
       </section>
 <!--CONTACTS SECTION-->
       <section id="Contacts" class="Contacts">
         <h1>Contact <span class="name">Me</span></h1>
   <div class="row1">
     <div class="Contacts-container">
-
+         <div class="knowme-container">
             <div id="knowme" class="knowme">
               <h2 class="touch">Get In Touch!!</h2>
-              <p>.Get to know me through various platforms in the description below <br>
-              .Lets work together in making cool websites and continue learning
+              <p>Feel free to reach out to me through any of the following methods
                </p>
             </div>
             <div class="reachme">
                   <div class="contact-box">
+                  <a href="tel:+254114581500" class="phoneno">
                   <i class="fa-solid fa-phone"></i>
                   </i><p class="myconts">Call Me:</p>
-                  <a href="tel:+254114581500" class="phoneno">+2541145811500</a>
+                 +2541145811500</a>
                   </div>
                   <div class="contact-box">
+                    <a href="mailto:kemboimmanueli@gmail.com" class="phoneno">
                     <i class="fa-solid fa-envelope"></i> 
                     <p class="myconts">Email Me:</p>
-                    <a href="mailto:kemboimmanueli@gmail.com" class="phoneno">Kiprono</a>
+                    kemboimmanueli@...</a>
                   </div>
                 <div class="contact-box">
+                    <a href="valor.com" class="phoneno">
                     <i class="fa-solid fa-globe"></i> 
                     <p class="myconts">Website:</p>
-                    <a href="valor.com" class="phoneno">www.valar.com</a>
+                    www.valar.com</a>
                  </div>
                  <div class="contact-box">
+                  <a href="https://wa.me/+254114581500" class="phoneno" target="_blank">
                    <i class="fa-solid fa-comment"></i>      
                        <p class="myconts">Text Me:</p>
-                       <a href="https://wa.me/+254114581500" class="phoneno">WhatsApp</a>
+                       WhatsApp</a>
                   </div>
    </div> 
     <!---follow me-->
         <div class="follow">
           <h2 class="touch">Follow Me on</h2>
-          <a href="https://discord.com/users/druggoon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i></a>
-          <a href="https://tiktok.com/@itsthedarnphone"target="-blank"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="http://discord.com/drugoon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i></a>
+          <a href="https://tiktok.com /Vhagar"target="-blank"><i class="fa-brands fa-tiktok"></i></a>
           <a href="https://linkedin.com/in/emmanuel-kiprono-14a800389"target="_blank"> <i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://twitter.com/riotsquider?s=08" target="_blank">   <i class="fa-brands fa-x-twitter "></i></a>
+          <a href="https://twitter.com/unknown" target="_blank">   <i class="fa-brands fa-x-twitter "></i></a>
           <a href="https://github.com/echoesrule" target="_blank"> <i class="fa-brands fa-github "></i> </a> 
           <a href="https://wa.me/+254114581500" target="_blank"> <i class="fa-brands fa-whatsapp "></i> </a>
           <a href="https://instagram.com/S.k.r.e.a.m.z" target="_blank"> <i class="fa-brands fa-instagram "></i></a>
         </div>
-   </div>
-     <!--Contact form-->
-        <div id="digits" class="contact-form">
-          <h2 class="touch">Short message</h2>
-          <input type="text" placeholder="Enter name" class="nem">
-          <input type="tel" required  name="phone"  class="phone"  placeholder="Enter your phone number"><br>
-          <input type="email" placeholder="Enter Email" class="Email" required><br>
-          <input type="text" placeholder=" Your Message" class="Message"><br>
-          <button type="submit" class="hire">Submit</button>
-        </div>
+          </div>
   </div>
+     <!--Contact form-->
+        <form action="https://formspree.io/f/xqagpggb" method="POST" class="contact-form" id="contact-form">
+          <i class="fa-solid fa-paper-plane" style="color: #FFD43B;"></i>
+          <h2 class="touch">Short message</h2>
+          <input type="text"  id="text" name="Name"  placeholder="Enter name" class="nem">
+          <input type="tel" id="tel" required  name="Phone"  class="phone"  placeholder="Enter your phone number"><br>
+          <input type="email" id="email" name="Email"  placeholder="Enter Email" class="Email" required><br>
+         <textarea id="message" name="Message" placeholder="Your Message" class="Message" required></textarea><br>
+          <button type="submit" class="hire">Submit</button>
+        </form>
+        <div id="popup" class="popup">Message sent successfully!</div>
+
+  </div>
+<script>
+document.getElementById('contact-form').addEventListener("submit", async function(event) {
+  event.preventDefault(); 
+  const form = event.target;
+  const data = new FormData(form);
+  const popup = document.getElementById('popup');
+  const userName = form.querySelector('input[name="name"]')?.value.trim() || "friend";
+
+  // Show loading popup
+  popup.textContent = "Sending your message...";
+  popup.className = "popup show loading";
+
+  try {
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { "Accept": "application/json" }
+    });
+
+    if (response.ok) {
+      // Success popup
+      popup.classList.remove('loading');
+      popup.textContent = `Thanks ${userName}! Your message was sent successfully ✨`;
+      form.reset();
+
+      setTimeout(() => {
+        popup.classList.add('hide');
+        setTimeout(() => popup.classList.remove('show', 'hide'), 500);
+      }, 3000);
+    } else {
+      popup.classList.remove('loading');
+      popup.textContent = "Something went wrong. Please try again.";
+    }
+  } catch (error) {
+    popup.classList.remove('loading');
+    popup.textContent = "Network error. Please check your connection.";
+  }
+});
+</script>
+
+
 <div class="cover">
   <div id="map-container"class="maps">
           <h2 class="touch">Where I'm Located</h2>
@@ -251,14 +773,58 @@
          <div id="news" class="news">
           <h2 class="touch"> My newslaters</h2>
           <p>Get the latest news about my upcoming projects,<br>updates and latest tweaks through my newsletters</p>
+            
+          <form action="https://formspree.io/f/manleaoy" method="POST" id="newsletters">
+            <input type="email" placeholder="Email" required  class="Email" name="Email">
+            <button type="submit"  class="hire">subscribe</button>
+          
+          </form>
+          <div id="newsletter-popup" class="popup">Subscribed successfully!</div>
 
-          <input type="email" placeholder="Email" required  class="Email">
-          <button type="submit" class="hire">Submit</button>
+          <script>
+            document.getElementById('newsletters').addEventListener("submit", async function(news){
+              news.preventDefault();
+              const form=news.target;
+              const data=new FormData(form);
+              const popup=document.getElementById ('newsletter-popup');
+              popup.textContent = "Subscribing...";
+              popup.className = "popup show loading";
+
+              try{
+                const response=await fetch(form.action,{
+                    method: form.method,
+                    body: data,
+                    headers: { "Accept": "application/json" }
+                });
+                  if (response.ok) {
+      // Success popup
+        popup.classList.remove('loading');
+        popup.textContent = `Thanks for subscribing`;
+       form.reset();
+                  setTimeout(() => {
+        popup.classList.add('hide');
+        setTimeout(() => popup.classList.remove('show', 'hide'), 500);
+      }, 3000);      
+              }
+              else{
+                  popup.classList.remove('loading');
+      popup.textContent = "Something went wrong. Please try again.";
+              }
+            }
+            catch (error) {
+    popup.classList.remove('loading');
+    popup.textContent = "Network error. Please check your connection.";
+  }
+            });
+          </script>
           </div>
          
          
          <div id="others" class="others">
-          <h3>.logo</h3><br>
+          <div class="others-introtext">
+          <img src="images/retro.jpg" alt="loading">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates optio ex perferendis obcaecati mollitia laborum, incidunt impedit vitae esse. Nisi distinctio deleniti eos, esse quaerat rerum cumque ipsum repellendus doloribus.</p>
+          </div>
         
           <div id="nav" class="navi">
             <h2 class="touch">Navigation</h2>
@@ -275,9 +841,7 @@
               From 7am -5pm
             </p>
             <div id="no" class="no">
-            <a href="tel:+254114581500" class="phoneno"> 
-             <i class="fa-solid fa-phone"></i>
-              Call Me: <br>+2541145811500</a>
+            <a href="tel:+254114581500" class="phoneno"><i class="fa-solid fa-phone"></i>Call Me</a>
             </div>
         </div>
 
@@ -320,27 +884,28 @@ links.forEach(link => {
 });
 
          document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".nav-links a");
+   const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-links a');
 
-    window.addEventListener("scroll", () => {
-      let current = "";
+window.addEventListener('scroll', () => {
+  let current = "";
 
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (scrollY >= sectionTop - sectionHeight / 3) {
-          current = section.getAttribute("id");
-        }
-      });
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100; // adjust offset
+      const sectionHeight = section.clientHeight;
+    if (scrollY >= sectionTop && screenY< sectionTop + sectionHeight) {
+      current = section.getAttribute('id');
+    }
+  });
 
-      navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href").includes(current)) {
-          link.classList.add("active");
-        }
-      });
-    });
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href').includes(current)) {
+      link.classList.add('active');
+    }
+  });
+});
+
   });
   
   const searchInput=document.querySelector(`.search-input`);
@@ -382,8 +947,4 @@ if (savedUsername) {
   </body>
 
   </html>
-
-
-
-
 
