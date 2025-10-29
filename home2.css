@@ -1632,10 +1632,17 @@ transform: translateY(-12px);
     opacity: 1;
     pointer-events: auto;
   }
-  
+  .contact-form{
+    margin: 120px 0;
+  }
+  .follow{
+    margin: 90px 0 30px 0 ;
+    background-color: #01767a;
+    
+  }
   .follow i{
     color: #fafafa;
-    margin: 0px 13px ;
+    margin: 20px 13px ;
    text-align: center;
   }
  
@@ -1657,17 +1664,19 @@ transform: translateY(-12px);
     font-weight: lighter;
   }
   .box-container{
-display: grid;
-grid-template-columns: repeat(2,1fr);
+
 flex-direction: column;
 flex-wrap: wrap;
   }
   .box {
+    margin: 0 12px;
     justify-content: space-between;
     align-items: top;
-    max-width: 30px;
-    max-height: fit-content;
-  
+    max-width: 80%;
+    min-height: min-content;
+    max-height: 20%;
+  padding:0 ;
+
   }
   .what .wat ,.about-text h2 ,.touch,.news h2{
     margin: 0 auto;
@@ -1764,4 +1773,3 @@ flex-wrap: wrap;
 }
 
  
-
