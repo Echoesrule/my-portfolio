@@ -8,6 +8,9 @@
   position: relative;
 
 }
+* {
+  box-sizing: border-box;
+}
 
 /* Prevent global section padding from affecting Home */
 section#Home {
@@ -123,7 +126,9 @@ nav{
     top: 0;
     left:0;
     width: 100%;
-    border: 1px solid rgb(68, 68, 68);
+   border: none;
+border-bottom: 1px solid rgb(68, 68, 68);
+
     background: #020201;
     border-left: none;
     border-top: none;
@@ -1772,6 +1777,12 @@ margin-left: 37px;
 .intro-text .platforms i{
   font-size: 1em !important;
 }
+  html, body {
+  overflow-x: hidden !important;
 }
+
+}
+
+
 
 
