@@ -87,6 +87,7 @@ section#Home {
   color: #ffffff;
   padding: 2px;
   transition: transform 0.3s ease, filter 0.3s ease;
+ 
 
 }
 .platforms img:hover,.platforms i:hover{
@@ -1517,9 +1518,7 @@ transform: translateY(-12px);
 .others .navi a ,.work p{
   text-align: center;
 }
-.navi h2,.work h2{
-  padding: 20px;
-}
+
   .news .Email {
     width: 90%;
   }
@@ -1527,16 +1526,6 @@ transform: translateY(-12px);
   nav a {
     font-size: 18px;
     margin: 0 10px;
-  }
-
-  .subtitle {
-    font-size: 30px;
-    margin-left: 20px;
-  }
-
-  .subtitle2, p {
-    margin-left: 20px;
-    font-size: 18px;
   }
 
   .Python, .Html, .Cplus, .Java {
@@ -1563,7 +1552,7 @@ transform: translateY(-12px);
     width: 40px;
   }
   .profile span{
-    font-size: 1em;
+    font-size: 0.97em;
   }
    nav{
     padding: 10px;
@@ -1637,8 +1626,6 @@ transform: translateY(-12px);
   }
   .follow{
     margin: 90px 0 30px 0 ;
-    background-color: #01767a;
-    
   }
   .follow i{
     color: #fafafa;
@@ -1654,15 +1641,16 @@ transform: translateY(-12px);
   .about-text{
     margin: 0;
   }
-  .about-text h3{
-    font-size: 1.7rem;
-    padding: 20px 0 0 0;
-  }
   .about-text p{
-    font-size: 1.2rem;
-    padding: 10px 10px 10px 10px;
-    font-weight: lighter;
+    text-align: left !important;
   }
+  
+  .about-text h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 20px 0 10px 0;
+  }
+
   .box-container{
 
 flex-direction: column;
@@ -1676,13 +1664,8 @@ flex-wrap: wrap;
     min-height: min-content;
     max-height: 20%;
   padding:0 ;
+  }
 
-  }
-  .what .wat ,.about-text h2 ,.touch,.news h2{
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1.9rem;
-  }
   .top img {
     max-width: 150px;
   }
@@ -1725,9 +1708,8 @@ flex-wrap: wrap;
  border: 1px solid rgb(44, 44, 44);
  border-radius: 12px;
 }
-.knowme p ,.news p{
-  font-size: 1.2em;
-  font-weight: lighter;
+.skill-box p{
+  text-align: center;
 }
 .info-content{
   margin:0 auto;
@@ -1741,7 +1723,7 @@ flex-wrap: wrap;
   min-width: 100px;
   height: fit-content;
   padding: 2px;
-  
+
    word-break: break-all;
 }
 
@@ -1755,21 +1737,41 @@ flex-wrap: wrap;
 .tools img{
   width: 28px;
 }
-}
-
-@media (max-width: 480px) {
-  .About {
-    padding: 60px 5%;
-  }
-
-  .top img {
-    max-width: 200px;
-  }
-
-  .about-text, .info {
-    padding: 15px;
-    font-size: 0.95rem;
-  }
-}
-
+ body p {
+  font-size: 0.97em !important;
+    font-family: 'Bebas Neue', sans-serif;
+   text-align: center;
  
+ }
+ body h2,h3 {
+  font-size: 1.5em !important;
+  padding: 20px;
+  margin: 0 20px !important;
+ }
+
+body{
+  justify-content: space-evenly !important;
+}
+.intro-text .subtitle2{
+  font-size: 0.9em !important;
+  padding-bottom: 0;
+}
+.intro-text p{
+text-align: left;
+margin: 0 37px;
+
+}
+.intro-text span{
+
+  font-weight: bold;
+}
+.platforms{
+text-align: center;
+margin-left: 37px;
+}
+.intro-text .platforms i{
+  font-size: 1em !important;
+}
+}
+
+
